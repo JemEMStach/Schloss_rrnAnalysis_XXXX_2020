@@ -2,7 +2,7 @@
 
 # auhtor: Jem Stach
 # inputs: name of the file extracted from the archive (without the path)
-# output: The appropriate rrnDNB file into data/raw/ 
+# output: The appropriate rrnDNB file into data/raw/
 
 archive=$1
 
