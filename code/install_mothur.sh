@@ -2,7 +2,7 @@
 
 # author: Jem Stach
 # inputs: none
-# outputs: mothur installed in code/Mothur
+# outputs: mothur installed in code/mothur
 
 #the zip archive contains a directory called "mothur" so we can extract it directly to code/
 

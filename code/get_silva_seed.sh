@@ -2,7 +2,7 @@
 
 # author: Jem Stach
 # inputs: none
-# outputs: places SILVA seed alignment inot data/references/silva_seed
+# outputs: places SILVA seed alignment into data/references/silva_seed
 #
 # Download this version of the SILVA reference to help with aligning mothur
 # sequence data. This is version 138, released in 2020. Becuase tje tgz file
