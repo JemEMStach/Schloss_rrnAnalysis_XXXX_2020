@@ -5,10 +5,14 @@
 # output: The appropriate rrnDNB file into data/raw/
 # touch command used to update the time stamp on downloaded files
 
-archive=$1
+target=$1
 
+#use sed command to find and replace the path (with nothing) to give just the file name
+filename=`echo $target | sed "s/.*\///"`
+#use sed to find and replace the filename (with nothing) to give the path
+path=`echo $target | sed -E "s/(.*\/).*/\1/"`
 
-wget -P data/raw/ -nc https://rrndb.umms.med.umich.edu/static/download/"$archive".zip
-unzip -n -d data/raw/ data/raw/"$archive".zip
+wget -P "$path" -nc https://rrndb.umms.med.umich.edu/static/download/"$filename".zip
+unzip -n -d "$path" "$target".zip
 
-touch data/raw/"$archive"
+touch "$target"
