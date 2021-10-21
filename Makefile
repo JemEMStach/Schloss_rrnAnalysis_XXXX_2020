@@ -27,6 +27,6 @@ data/raw/rrnDB-5.7_16S_rRNA.align : data/references/silva_seed/silva.seed_v138_1
 	./code/align_sequences.sh
 
 data/%/rrnDB.align data/%/rrnDB.bad.accnos : code/extract_region.sh\
-											data/raw/rrnDB-5.7_16S_rRNA.align
+											data/raw/rrnDB-5.7_16S_rRNA.align\
 											code/mothur/mothur
 	./code/extract_region.sh $@
